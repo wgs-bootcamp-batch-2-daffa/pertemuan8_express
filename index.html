@@ -30,7 +30,65 @@
         </div>
       </nav>
       <h1>Home Page</h1>
-    </div>
+      <h4>Request params</h4>
+      <div class="list-group col-sm-2">
+        <a class="list-group-item list-group-item-action disabled">Minuman</a>
+        <a href="/drinks/kopi" class="list-group-item list-group-item-action">
+          Kopi
+        </a>
+        <a href="/drinks/teh" class="list-group-item list-group-item-action">
+            Teh
+        </a>
+        <a href="/drinks/susu" class="list-group-item list-group-item-action">
+            Susu
+        </a>
+      </div>
+      <br>
+      <h4>Request get</h4>
+      <form method="GET" action="/drinks">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Drink</label>
+            <div class="col-sm-10">
+                <select class="form-select-sm" aria-label="Default select example" name="drink">
+                    <option selected>Choose Drink</option>
+                    <option value="Kopi">Kopi</option>
+                    <option value="Teh">Teh</option>
+                    <option value="pepsi">Susu</option>
+                </select>
+            </div>
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-sm-2">
+              <input class="form-control form-control-sm" type="text" placeholder="Panas/Dingin" aria-label=".form-control-sm example" name="description">
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success btn-sm col-sm-1">Confirm</button>
+        </div>
+      </form>
+      <br><br>
+      <h4>Request post</h4>
+      <form method="POST" action="/drinks">
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Drink</label>
+            <div class="col-sm-10">
+                <select class="form-select-sm" aria-label="Default select example" name="drink">
+                    <option selected>Choose Drink</option>
+                    <option value="Kopi">Kopi</option>
+                    <option value="Teh">Teh</option>
+                    <option value="pepsi">Susu</option>
+                </select>
+            </div>
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-sm-2">
+              <input class="form-control form-control-sm" type="text" placeholder="Panas/Dingin" aria-label=".form-control-sm example" name="description">
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success btn-sm col-sm-1">Confirm</button>
+        </div>
+      </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
